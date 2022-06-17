@@ -1,0 +1,86 @@
+/** @format */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background: linear-gradient(to right, pink, green);
+}
+
+.grid {
+	width: 100%;
+	max-width: 400px;
+	border-radius: 16px;
+	overflow: hidden;
+	align-self: center;
+	grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+}
+
+.history {
+	font-size: 2.5rem;
+	color: orangered;
+	flex: 1 1 100%;
+	max-width: 20%;
+	outline: auto;
+	background-color: black;
+}
+
+.output {
+	height: 7rem;
+	background-color: rgba(0, 0, 0, 0.75);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-around;
+	padding: 0.75rem;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.output .previous-operand {
+	color: yellow;
+	font-size: 1.5rem;
+}
+
+.output .current-operand {
+	color: green;
+	font-size: 2.5rem;
+}
+
+.operate {
+	display: flex;
+}
+
+.operate button {
+	flex: 1 1 0%;
+	color: blue;
+	background-color: rgb(222, 231, 43);
+	font-size: 2rem;
+	outline: auto;
+}
+
+.operate button:hover,
+.operate button:focus {
+	background-color: red;
+}
+
+.digits {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.digits button {
+	flex: 1 1 33.33333333%;
+	max-width: 33.333333%;
+	font-size: 2rem;
+	outline: auto;
+}
+
+.digits button:hover,
+.digits button:focus {
+	background-color: greenyellow;
+}
