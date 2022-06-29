@@ -12,7 +12,7 @@ const MainHeader = () => {
 						<NavLink
 							className={(xx) => (xx.isActive ? classes.active : '')}
 							to='/'>
-							Maintest
+							Home Page
 						</NavLink>
 					</li>
 					<li>
